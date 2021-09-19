@@ -58,6 +58,7 @@ public class QuickSort {
     public static void main(String[] args) {
         QuickSort quickSort = new QuickSort();
         int[] arr = new int[]{3,2,1,1, 5,6,4, 3, 5,7, 3, 8};
+        arr = new int[]{5,7,2,4,8,1,3};
         quickSort.quickSort(arr);
     }
 }
