@@ -1,4 +1,7 @@
 package algorithm.bisearch;
+
+import java.util.ArrayList;
+
 public class Bound {
     /**
      * [1, 5, 7] 3 => return index 0
@@ -42,6 +45,24 @@ public class Bound {
             }
         }
         return index;
+    }
+
+    //find the first element greater than num without repeat numbers
+    private int binarySearch(ArrayList<Integer> sub, int num) {
+        int left = 0;
+        int right = sub.size() - 1;
+        while (left < right) {
+            int mid = left + (right - left) /2;
+            if (sub.get(mid) == num) {
+                return mid;
+            }
+            if (sub.get(mid) < num) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return left;
     }
 
     public static void main(String[] args) {

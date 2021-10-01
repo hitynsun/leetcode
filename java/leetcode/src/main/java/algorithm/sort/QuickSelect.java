@@ -54,7 +54,7 @@ public class QuickSelect {
 
     public static void main(String[] args) {
         QuickSelect quickSort = new QuickSelect();
-        int[] arr = new int[]{2, 3,1, 1};
-        int a = quickSort.quickSelect(arr, 2);
+        int[] arr = new int[]{1,8};
+        int a = quickSort.quickSelect(arr, 1);
     }
 }
