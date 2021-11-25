@@ -84,7 +84,7 @@ public class HeapSort {
         }
         if (largest_value_index != i) {
             swap(arr, i, largest_value_index);
-            max_heapify(arr, n, largest_value_index);
+            top_down_max_heapify(arr, n, largest_value_index);
         }
     }
 
