@@ -60,6 +60,24 @@ public class Bound {
         return left;
     }
 
+
+    private int find_correct_location(ArrayList<Integer> sub, int num) {
+        int left = 0;
+        int right = sub.size() - 1;
+        while (left < right) {
+            int mid = left + (right - left) /2;
+            if (sub.get(mid) == num) {
+                return mid;
+            }
+            if (sub.get(mid) < num) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return left;
+    }
+
     public static void main(String[] args) {
         int[] arr = new int[]{1,5,5,5, 5, 9};
         Bound leftBound = new Bound();
