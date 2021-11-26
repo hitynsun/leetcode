@@ -1,5 +1,8 @@
 package algorithm.sort;
 
+/**
+ * find kth largest/smallest value
+ */
 public class QuickSelect {
     public int quickSelect(int[] arr, int k){
         int index = quickSelect(arr, 0, arr.length, k);

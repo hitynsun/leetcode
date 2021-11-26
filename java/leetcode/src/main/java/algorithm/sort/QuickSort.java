@@ -22,6 +22,13 @@ public class QuickSort {
         quickSort(arr, index + 1, right);
     }
 
+    /**
+     * find the correct index of pivot value
+     * @param left
+     * @param right
+     * @param arr
+     * @return
+     */
     private int partition(int left, int right, int[] arr) {
         int i = left, j = right;
         int pivot = getPivot(arr, left, right);
